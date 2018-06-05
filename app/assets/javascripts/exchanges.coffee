@@ -6,9 +6,9 @@ $(document).ready ->
           type: 'GET'
           dataType: 'json'
           data: {
-                  currency: $("#currency").val(),
-                  currency_destination: $("#currency_destination").val(),
-                  quantity: $("#quantity").val()
+                  source_currency: $("#currency").val(),
+                  target_currency_destination: $("#currency_destination").val(),
+                  amount: $("#quantity").val()
                 }
           error: (jqXHR, textStatus, errorThrown) ->
             alert textStatus
